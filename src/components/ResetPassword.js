@@ -13,7 +13,7 @@ const ResetPassword = ({history}) => {
         console.log("token",resetLink)
         e.preventDefault()
 
-        axios.put('http://localhost:4000/api/user/reset-password',{resetLink,newPass})
+        axios.put('https://urlshortener-mern.herokuapp.com/api/user/reset-password',{resetLink,newPass})
              .then((res)=>{
                 if(res.data.message)
                 {

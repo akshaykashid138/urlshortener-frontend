@@ -13,7 +13,7 @@ export default function Register() {
     const handleSubmit=(e)=>{
         e.preventDefault();
         const data={email, password}
-        axios.post('http://localhost:4000/api/user/register',data)
+        axios.post('https://urlshortener-mern.herokuapp.com/api/user/register',data)
         .then((res)=>{
             if(res.data.message){
                 setMessage(res.data.message)

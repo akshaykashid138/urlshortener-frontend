@@ -7,7 +7,7 @@ const ActivateUser = ({history}) => {
        
         const token=history.location.pathname.split('/')[3]
         //const data={token}
-        axios.post('http://localhost:4000/api/user/account-activation',{token})
+        axios.post('https://urlshortener-mern.herokuapp.com/api/user/account-activation',{token})
              .then((res)=>{
                     console.log(res)
                  setMessage(res.data.message)

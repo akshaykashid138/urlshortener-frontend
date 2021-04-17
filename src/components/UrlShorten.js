@@ -15,7 +15,7 @@ const UrlShorten = () => {
             alert("Please insure this url is correct and includes the http(s) protocol.")
         }else{
             console.log('url is:',url)
-            axios.post('http://localhost:4000/api/shorten',{url})
+            axios.post('https://urlshortener-mern.herokuapp.com/api/shorten',{url})
              .then((res)=>{
                  console.log(res)
                  if(res.data.hash){

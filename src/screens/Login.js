@@ -14,7 +14,7 @@ export default function Login({history}) {
     e.preventDefault()
     const data={email,password}
    
-    axios.post('http://localhost:4000/api/user/login',data)
+    axios.post('https://urlshortener-mern.herokuapp.com/api/user/login',data)
           .then((res)=>{
             console.log(res)
             if(res.data.success){

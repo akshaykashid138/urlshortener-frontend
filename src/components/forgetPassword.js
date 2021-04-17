@@ -9,7 +9,7 @@ const ForgetPassword = ({history}) => {
     const handleSubmit=(e)=>{
         e.preventDefault()
         console.log("email::",email)
-        axios.put('http://localhost:4000/api/user/forget-password',{email})
+        axios.put('https://urlshortener-mern.herokuapp.com/api/user/forget-password',{email})
             .then((res)=>{
                 if(res.data.message)
                 {

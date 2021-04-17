@@ -18,7 +18,7 @@ export class Dashboard extends Component {
   }
 
   getUrls=()=>{
-    axios.get("http://localhost:4000/api/shorten/allurl").then((res)=>{
+    axios.get("https://urlshortener-mern.herokuapp.com/api/shorten/allurl").then((res)=>{
       // console.log(res)
       if(res.data.Success){
         this.setState({ 

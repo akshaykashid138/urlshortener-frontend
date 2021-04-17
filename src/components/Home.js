@@ -7,7 +7,7 @@ const Home = () => {
 
     
     //records per day
-    axios.get('http://localhost:4000/api/shorten/record-per-day')
+    axios.get('https://urlshortener-mern.herokuapp.com/api/shorten/record-per-day')
          .then((res)=>{
              setCountDay(res.data)
          })
@@ -16,7 +16,7 @@ const Home = () => {
          })
 
     //records per month
-    axios.get('http://localhost:4000/api/shorten/record-per-month')
+    axios.get('https://urlshortener-mern.herokuapp.com/api/shorten/record-per-month')
          .then((res)=>{
              setCountMonth(res.data)
          })
