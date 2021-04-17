@@ -9,8 +9,11 @@ const ActivateUser = ({history}) => {
         //const data={token}
         axios.post('https://urlshortener-mern.herokuapp.com/api/user/account-activation',{token})
              .then((res)=>{
-                    console.log(res)
                  setMessage(res.data.message)
+                 setTimeout(()=>{
+                    history.push("/")
+                },1000)
+                
              })
         
     }

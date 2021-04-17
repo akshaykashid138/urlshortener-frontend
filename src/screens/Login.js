@@ -39,7 +39,7 @@ export default function Login({history}) {
           <input placeholder="email" name='email' className="joinInput" type="text" onChange={(event) => setEmail(event.target.value)} />
         </div>
         <div>
-          <input placeholder="Password" name='password' className="joinInput mt-20" type="text" onChange={(event) => setPassword(event.target.value)} />
+          <input placeholder="Password" name='password' className="joinInput mt-20" type="password" onChange={(event) => setPassword(event.target.value)} />
         </div>
           <button className={'button mt-20'} onClick={handleSubmit} type="submit">Log In</button>
       </div>
