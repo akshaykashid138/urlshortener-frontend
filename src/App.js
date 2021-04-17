@@ -20,9 +20,10 @@ function App() {
       <Route path='/urlshorten' component={UrlShorten} />
       <Route path='/home' component={Home} />
       <Route path="/register" exact component={Register} />
-      {/* <Route path='/forgetpassword'   component={ForgetPassword} />
-      <Route patth='/resetpassword' component={ResetPassword} /> */}
       <Route path='/authentication/activate' component={ActivateUser} />
+      <Route path='/forgetpassword'   component={ForgetPassword} />
+      <Route patth='/resetpassword' component={ResetPassword} />
+      
       </Switch>
       
     </div>

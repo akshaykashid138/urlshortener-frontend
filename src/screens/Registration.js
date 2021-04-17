@@ -15,6 +15,7 @@ export default function Register() {
         const data={email, password}
         axios.post('https://urlshortener-mern.herokuapp.com/api/user/register',data)
         .then((res)=>{
+            console.log("response",res)
             if(res.data.message){
                 setMessage(res.data.message)
             }
