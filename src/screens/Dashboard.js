@@ -45,7 +45,7 @@ export class Dashboard extends Component {
                 </div>
           </div>
         
-        <table className="table table-striped" style={{width:"100vw"}}>
+        <table className="table table-striped" style={{width:"70vw"}}>
           <thead>
               <tr>
                 <th scope="col">#</th>
