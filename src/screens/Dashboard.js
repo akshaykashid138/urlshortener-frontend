@@ -45,20 +45,20 @@ export class Dashboard extends Component {
                 </div>
           </div>
         
-        <table className="table table-striped" style={{width:"70vw"}}>
+        <table className="table table-striped">
           <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Title</th>
-                <th scope="col">Description</th>
+                <th scope="col" className='col-5'>Title</th>
+                <th scope="col" className='col-7'>Description</th>
               </tr>
           </thead>
           <tbody>
               {this.state.urls.map((url,index)=>(
                 <tr key={index}>
                 <th scope="row">{index}</th>
-                <td><a target='_blank' href={url.url} >http://urlshorten.in/{url._id}</a></td>
-                <td><a target='_blank' href={url.url} >{url.url}</a></td>
+                <td className='col-5'><a target='_blank' href={url.url} >http://urlshorten.in/{url._id}</a></td>
+                <td className='col-7'><a target='_blank' href={url.url} >{url.url}</a></td>
               </tr>
               ))}
             
