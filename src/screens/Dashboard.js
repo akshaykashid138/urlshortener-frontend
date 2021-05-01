@@ -45,7 +45,7 @@ export class Dashboard extends Component {
                 </div>
           </div>
         
-        <table className="table  table-responsive">
+        <table className="table table-striped table-responsive">
           <thead>
               <tr>
                 <th scope="col">#</th>
