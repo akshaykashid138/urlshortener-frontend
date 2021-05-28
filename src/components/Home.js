@@ -48,7 +48,7 @@ const Home = () => {
             </div>
         
             <div className='col-11' style={{border:"2px solid purple", borderRadius:"4px", marginTop:'30px'}}>
-                <h2 style={{marginTop:'12px'}}>This is url shortenar app here you can shorten you long url</h2>
+                <h2 style={{marginTop:'12px'}}>This is url shortener app here you can shorten your long url</h2>
                 <p>You can see generated all short urls </p>
                 <p>Here you can see number of url generate per day and per month.</p>
                 <p>For generating short url you can go to Url shorten link.</p>
